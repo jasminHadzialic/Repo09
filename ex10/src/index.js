@@ -1,24 +1,19 @@
 // Only change code below this line
-function logical10Operator(num){
-    if(num < 20 || num > 30){
-        return "Out";
+function logicOrder(num){
+    if(num < 50) {
+        return "Less than 50"
+    } else if (num < 100){
+        return "Less than 100";
+    } else {
+        return "Greater than or equal to 100";
     }
-    return "In";
 }
 
-logical10Operator(0);
-logical10Operator(9);
-logical10Operator(20);
-logical10Operator(23);
-logical10Operator(30);
-logical10Operator(31);
-logical10Operator(105);
-console.log(logical10Operator(0));
-console.log(logical10Operator(9));
-console.log(logical10Operator(20));
-console.log(logical10Operator(23));
-console.log(logical10Operator(30));
-console.log(logical10Operator(31));
-console.log(logical10Operator(105));
+logicOrder(28);
+logicOrder(60);
+logicOrder(110);
+console.log(logicOrder(28));
+console.log(logicOrder(60));
+console.log(logicOrder(110));
 // Only change code above this line
-module.exports = logical10Operator;
+module.exports = logicOrder;
